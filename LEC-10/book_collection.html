@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>📚 Book Collection Form</title>
+</head>
+<body>
+    <h2>Library Book Borrowing Form</h2>
+
+    <form method="POST" action="book_submit.php">
+        <label>1. Username:</label><br>
+        <input type="text" name="username" required><br><br>
+
+        <label>2. Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>3. Book Collection:</label><br>
+        <select name="book[]" multiple required>
+            <option value="PHP for Beginners">PHP for Beginners</option>
+            <option value="Learn HTML & CSS">Learn HTML & CSS</option>
+            <option value="JavaScript Basics">JavaScript Basics</option>
+            <option value="MySQL Mastery">MySQL Mastery</option>
+            <option value="Laravel Advanced">Laravel Advanced</option>
+        </select><br><br>
+
+        <label>4. Number of Copies:</label><br>
+        <input type="number" name="number" min="1" required><br><br>
+
+        <label>5. Receive Date:</label><br>
+        <input type="date" name="receive_date" required><br><br>
+
+        <label>6. Return Date:</label><br>
+        <input type="date" name="return_date" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
