@@ -20,7 +20,7 @@ if ($_POST['pass'] != $_POST['conpass']) {
 	$password = $_POST['pass'];
 	$conpass = $_POST['conpass'];
 	
-	$hashed = password_hash($pass, PASSWORD_DEFAULT);
+	$hashed = password_hash($password, PASSWORD_DEFAULT);
 	$gender = $_POST['gender'];
 }
 
